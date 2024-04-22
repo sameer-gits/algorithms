@@ -11,7 +11,7 @@ yarn.lock
 **/dist/
 
 # Ignore any compiled JavaScript files
-**/*.js
+#**/*.js
 
 # Ignore any log files
 *.log
