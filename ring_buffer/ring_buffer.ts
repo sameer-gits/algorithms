@@ -20,7 +20,7 @@ export default class ring_buffer<T> {
     }
 
     pop(): T | undefined {
-        const head = this.head & this.buffer.length;
+        const head = this.head % this.buffer.length;
         const deleted_value = this.buffer[head];
         this.buffer[head] = undefined;
         this.head++;
