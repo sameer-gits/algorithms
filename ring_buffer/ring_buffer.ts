@@ -10,7 +10,7 @@ export default class ring_buffer<T> {
         this.size = 0;
     }
 
-    resize(): void {
+    private resize(): void {
         const newsize = this.buffer.length * 2;
         const newbuffer = new Array<T | undefined>(newsize);
         let newIndex = 0;
